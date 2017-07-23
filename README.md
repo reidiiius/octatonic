@@ -1,5 +1,5 @@
 # Octatonic
-Musical notation
+Hexadecimal fretboard diagrams
 
 ---
 
