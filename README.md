@@ -16,6 +16,10 @@ command line
 
     js -s korsakov.js | less
 
+    js -s korsakov.js cgdae | less
+
+    js -s korsakov.js bfbfb | less
+
 ---
 
 ### Distribution

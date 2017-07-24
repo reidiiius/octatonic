@@ -9,7 +9,9 @@ Argonaut.ogdoad = {
        j3m6: "92 __ 7C B8 __ AA __ 8B C7 __ 29 44 "
   },
   beryl: {
-       k2m6: "93 __ __ 39 54 A2 __ 8C C8 __ 2A 45 "
+       k2m6: "93 __ __ 39 54 A2 __ 8C C8 __ 2A 45 ",
+       m2j6: "93 E7 __ 39 54 A2 __ 8C C8 __ __ 45 ",
+      j34m6: "93 __ 7E 39 54 __ __ 8C C8 __ 2A 45 "
   },
   topaz: {
          p6: "95 __ 77 __ 59 A4 __ 86 CC 68 __ 4A ",
@@ -98,7 +100,7 @@ Argonaut.serialStamp = Argonaut.chronoMetric();
 
 Argonaut.inStrum = function() {
   var t = arguments[0], a = arguments[1].reverse();
-  var s = "  ", h = "-", g, i, j, k, m;
+  var s = "\t", h = "-", g, i, j, k, m;
   for (i in this.ogdoad) {
     g = i.slice( 0, 4);
     for (j in this.ogdoad[i]) {
@@ -148,19 +150,37 @@ Argonaut.fkbjdn = function() {
 
 print();
 
-//  Argonaut.beadgcf();
+if (scriptArgs.length > 0) {
 
-//  Argonaut.bfbfb();
-
-//  Argonaut.cgdae();
-
-//  Argonaut.dadgad();
-
-//  Argonaut.dgdgbd();
-
+  switch (scriptArgs[0]) {
+    case "beadgcf" :
+      Argonaut.beadgcf();
+      break;
+    case "bfbfb" :
+      Argonaut.bfbfb();
+      break;
+    case "cgdae" :
+      Argonaut.cgdae();
+      break;
+    case "dadgad" :
+      Argonaut.dadgad();
+      break;
+    case "dgdgbd" :
+      Argonaut.dgdgbd();
+      break;
+    case "eadgbe" :
+      Argonaut.eadgbe();
+      break;
+    case "fkbjdn" :
+      Argonaut.fkbjdn();
+      break;
+    default :
+      Argonaut.eadgbe();
+  }
+}
+else {
   Argonaut.eadgbe();
-
-//  Argonaut.fkbjdn();
+}
 
 print();
 
