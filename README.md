@@ -14,11 +14,21 @@ command line
 
     cd octatonic
 
-    js korsakov.js | less
+    js korsakov.js | sensible-pager
 
-    js korsakov.js cgdae | less
+    js korsakov.js beadgcf
 
-    js korsakov.js bfbfb | less
+    js korsakov.js bfbfb
+
+    js korsakov.js cgdae
+
+    js korsakov.js dadgad
+
+    js korsakov.js dgdgbd
+
+    js korsakov.js eadgbe
+
+    js korsakov.js fkbjdn
 
 ---
 

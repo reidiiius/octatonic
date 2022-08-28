@@ -149,13 +149,13 @@ Argonaut.fkbjdn = function() {
   this.inStrum('fkbjdn', [7, 11, 3, 7, 11, 3]);
 };
 
+Argonaut.params = process.argv.slice(2);
+
 console.log();
 
-const argots = process.argv.slice(2);
+if (Argonaut.params.length > 0) {
 
-if (argots.length > 0) {
-
-  switch (argots[0]) {
+  switch (Argonaut.params[0]) {
     case "beadgcf" :
       Argonaut.beadgcf();
       break;
