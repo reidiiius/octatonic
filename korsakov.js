@@ -106,11 +106,11 @@ Argonaut.inStrum = function() {
     g = i.slice( 0, 4);
     for (j in this.ogdoad[i]) {
       m = s + g + h + j + h + t + "-v" + this.serialStamp;
-      print("\n" + m);
+      console.log("\n" + m);
       for (k = 0; k < a.length; k++) {
-        print(s + this.gamut(a[k], this.ogdoad[i][j]));
+        console.log(s + this.gamut(a[k], this.ogdoad[i][j]));
       }
-      print();
+      console.log();
     }
   }
 };
@@ -149,11 +149,13 @@ Argonaut.fkbjdn = function() {
   this.inStrum('fkbjdn', [7, 11, 3, 7, 11, 3]);
 };
 
-print();
+console.log();
 
-if (scriptArgs.length > 0) {
+const argots = process.argv.slice(2);
 
-  switch (scriptArgs[0]) {
+if (argots.length > 0) {
+
+  switch (argots[0]) {
     case "beadgcf" :
       Argonaut.beadgcf();
       break;
@@ -183,5 +185,5 @@ else {
   Argonaut.eadgbe();
 }
 
-print();
+console.log();
 

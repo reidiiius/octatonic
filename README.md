@@ -14,11 +14,11 @@ command line
 
     cd octatonic
 
-    js -s korsakov.js | less
+    js korsakov.js | less
 
-    js -s korsakov.js cgdae | less
+    js korsakov.js cgdae | less
 
-    js -s korsakov.js bfbfb | less
+    js korsakov.js bfbfb | less
 
 ---
 
