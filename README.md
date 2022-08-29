@@ -12,23 +12,7 @@ Hexadecimal fretboard diagrams
 ### Usage
 command line
 
-    cd octatonic
-
-    js korsakov.js | sensible-pager
-
-    js korsakov.js beadgcf
-
-    js korsakov.js bfbfb
-
-    js korsakov.js cgdae
-
-    js korsakov.js dadgad
-
-    js korsakov.js dgdgbd
-
-    js korsakov.js eadgbe
-
-    js korsakov.js fkbjdn
+    cd octatonic && js korsakov.js beadgcf | sensible-pager
 
 ---
 
